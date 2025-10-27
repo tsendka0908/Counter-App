@@ -40,6 +40,10 @@ body {
     background-color: #45b7d1;
     color: white;
 }
+#reset {
+    background-color: lightgreen;
+    color: white;
+}
 
 button:hover {
     opacity: 0.8;

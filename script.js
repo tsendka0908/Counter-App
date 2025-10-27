@@ -3,6 +3,7 @@ const counterDisplay = document.getElementById("counter");
 const decreaseBtn = document.getElementById("decrease");
 
 const increaseBtn = document.getElementById("increase");
+const resetBtn = document.getElementById("reset");
 
 decreaseBtn.addEventListener("click", () => {
     count--;
@@ -11,6 +12,10 @@ decreaseBtn.addEventListener("click", () => {
 
 increaseBtn.addEventListener("click", () => {
     count++;
+    updateDisplay();
+});
+resetBtn.addEventListener("click", () => {
+    count = 0;
     updateDisplay();
 });
 
